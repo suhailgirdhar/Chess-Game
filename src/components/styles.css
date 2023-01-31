@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  flex-flow: column;
+  /* justify-items: center; */
+  align-items: center;
+  margin: auto;
+  height: 600px;
+}
+
+.row {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 50px;
+  /* background-color: aqua; */
+  width: 400px;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  /* justify-items: center; */
+  /* align-content: center; */
+  align-items: center;
+}
+
+.row-even .box:nth-of-type(even) {
+  background-color: burlywood;
+}
+
+.row-odd .box:nth-of-type(odd) {
+  background-color: burlywood;
+}
+
+.selected {
+  background-color: yellow;
+}
+
+.child {
+  background-color: rgb(0, 0, 0, 0.15);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
